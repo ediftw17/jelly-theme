@@ -353,9 +353,11 @@
       if (!tt) {
         tt = document.createElement('h1');
         tt.className = 'nj-ptitle';
-        var hb = bar.querySelector('[aria-label="Open Menu"]');
-        if (hb) hb.parentNode.insertBefore(tt, hb.nextSibling); else bar.insertBefore(tt, bar.firstChild);
       }
+      // the menu button can render after the title was placed: keep the title right after it
+      var hb = bar.querySelector('[aria-label="Open Menu"]');
+      if (hb && hb.nextSibling !== tt) hb.parentNode.insertBefore(tt, hb.nextSibling);
+      else if (!hb && !tt.parentNode) bar.insertBefore(tt, bar.firstChild);
       if (tt.textContent !== t) tt.textContent = t;
     }
     var c = head.querySelector('.nj-chips');

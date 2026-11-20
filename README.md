@@ -6,7 +6,24 @@ Written for Jellyfin 10.10 and later, including 12.x, in the default (MUI) layou
 
 ## Screenshots
 
-Screenshots will be added to `docs/screens/` (`*.png`): Home on desktop and phone, a title page, the phone player and the profile picker.
+Phone:
+
+<p>
+<img src="docs/screens/phone-home.png" width="200" alt="Home on a phone">
+<img src="docs/screens/phone-title.png" width="200" alt="Title page on a phone">
+<img src="docs/screens/phone-episodes.png" width="200" alt="Episodes tab on a phone">
+</p>
+<p>
+<img src="docs/screens/phone-rows.png" width="200" alt="Top 10 and collections rows">
+<img src="docs/screens/phone-search.png" width="200" alt="Search on a phone">
+<img src="docs/screens/phone-mylist.png" width="200" alt="My List on a phone">
+</p>
+
+Desktop:
+
+![Home on desktop](docs/screens/desktop-home.png)
+![Rows on desktop](docs/screens/desktop-rows.png)
+![Title page on desktop](docs/screens/desktop-title.png)
 
 ## Features
 
